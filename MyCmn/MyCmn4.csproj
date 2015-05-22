@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CAE2D28-91CE-464C-957B-8948DF943AC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCmn</RootNamespace>
+    <AssemblyName>MyCmn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>MyCmn.snk</AssemblyOriginatorKeyFile>
+    <PublishUrl>http://localhost/MyCmn/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\MyCmn.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\MyCmn.XML</DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs4\Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs4\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.Routing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attribute\TreeChildPropertyNameAttribute.cs" />
+    <Compile Include="Common\CmdArgs.cs" />
+    <Compile Include="Common\CodeGen.cs" />
+    <Compile Include="Common\ChineseSpell.cs" />
+    <Compile Include="Common\ValueProc_IEnumerable.cs" />
+    <Compile Include="Common\MyCommandConfig.cs" />
+    <Compile Include="Common\ValueProc_Type.cs" />
+    <Compile Include="Common\ValueProc_Type_Shdow.cs" />
+    <Compile Include="Common\ValueProc_Invoke.cs" />
+    <Compile Include="Common\Host.cs" />
+    <Compile Include="Common\GodError_Scope.cs" />
+    <Compile Include="Common\XmlHelper.cs" />
+    <Compile Include="Data\Triplet.cs" />
+    <Compile Include="Data\CacheHelper4.cs" />
+    <Compile Include="Data\MyBigInt_Converter.cs" />
+    <Compile Include="Data\MyDate_Converter.cs" />
+    <Compile Include="Data\StringDict.cs" />
+    <Compile Include="Data\CPUSize.cs" />
+    <Compile Include="Data\MyList.cs" />
+    <Compile Include="Enum\CommonEqualityComparer.cs" />
+    <Compile Include="Enum\CpuSizeEnum.cs" />
+    <Compile Include="Extend\CommonTreeDict.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extend\CommonTreeItemViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extend\CommonTreeItemViewerForm.designer.cs">
+      <DependentUpon>CommonTreeItemViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extend\CommonTreeItemVisualizer.cs" />
+    <Compile Include="Extend\JsonMsg.cs" />
+    <Compile Include="Extend\MyTag.cs" />
+    <Compile Include="Extend\MyHelper_Url.cs" />
+    <Compile Include="Extend\MyHelper_Ajax.cs" />
+    <Compile Include="Extend\CommonEqualityComparer.cs" />
+    <Compile Include="Extend\CommonTreeItem.cs" />
+    <Compile Include="Interface\ICantToValueType.cs" />
+    <Compile Include="Interface\IEntity.cs" />
+    <Compile Include="Interface\ILog.cs" />
+    <Compile Include="Interface\IModel.cs" />
+    <Compile Include="UI\HtmlDom\HtmlTreeTagNodeViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HtmlDom\HtmlTreeTagNodeViewerForm.designer.cs">
+      <DependentUpon>HtmlTreeTagNodeViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HtmlDom\HtmlTreeTagNode.cs" />
+    <Compile Include="UI\HtmlDom\HtmlTreeTagNodeVisualizer.cs" />
+    <Compile Include="UI\HtmlDom.cs" />
+    <Compile Include="UI\HtmlNode_Proc.cs" />
+    <Compile Include="Data\JsonHelper.cs" />
+    <Compile Include="Data\MyBigInt.cs" />
+    <Compile Include="Data\MyDate.cs" />
+    <Compile Include="Extend\MyHelper.cs" />
+    <Compile Include="UI\ImgHelper.cs" />
+    <Compile Include="UI\MyUrl.cs" />
+    <Compile Include="Enum\Recursion.cs" />
+    <Compile Include="UI\ResponseFilter.cs" />
+    <Compile Include="Data\StringLinker.cs" />
+    <Compile Include="Common\ValueProc.cs" />
+    <Compile Include="Common\ValueProc_ForExpress.cs" />
+    <Compile Include="UI\WebFormHelper.cs" />
+    <Compile Include="UI\WebForm_Extend.cs" />
+    <Compile Include="UI\WebForm_Embody.cs" />
+    <Compile Include="UI\WebForm_Extend_Server.cs" />
+    <Compile Include="Data\EnumHelper.cs" />
+    <Compile Include="Common\Log.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\Security.cs" />
+    <Compile Include="Common\SerializerHelper.cs" />
+    <Compile Include="Common\ValueProc_Extend.cs" />
+    <Compile Include="Common\ValueProc_Extend_DbType.cs" />
+    <Compile Include="Common\GodError.cs" />
+    <Compile Include="Data\FixQueue.cs" />
+    <Compile Include="UI\HtmlDom_HtmlParse.cs" />
+    <Compile Include="UI\HtmlDom_HtmlCharLoad.cs" />
+    <Compile Include="UI\RequestFilter.cs" />
+    <Compile Include="Data\XmlDictionary.cs" />
+    <Compile Include="Common\CodeGen_For.cs" />
+    <Compile Include="Common\CodeGen_If.cs" />
+    <Compile Include="Enum\LangEnum.cs" />
+    <Compile Include="UI\HtmlDomHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>
+      </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>
+      </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>
+      </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extend\CommonTreeItemViewerForm.resx">
+      <DependentUpon>CommonTreeItemViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HtmlDom\HtmlTreeTagNodeViewerForm.resx">
+      <DependentUpon>HtmlTreeTagNodeViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(TargetDir)MyCmn*  $(SolutionDir)libs4\* /y /r /F</PostBuildEvent>
+  </PropertyGroup>
+</Project>
